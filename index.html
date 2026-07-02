@@ -9,13 +9,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --black: #16140f;
-    --charcoal: #211d16;
-    --ivory: #f1ebdd;
-    --ivory-dim: #e8e0cd;
-    --brass: #b8935a;
-    --brass-bright: #d4ac72;
-    --oxblood: #6d2a34;
+    --black: #0d0d0d;
+    --charcoal: #1a1a1a;
+    --ivory: #f5f5f3;
+    --ivory-dim: #e4e4e1;
+    --brass: #9c9c9c;
+    --brass-bright: #c9c9c6;
+    --oxblood: #161616;
     --line: rgba(241,235,221,0.14);
     --line-dark: rgba(22,20,15,0.12);
     --ease: cubic-bezier(.16,.8,.24,1);
@@ -224,7 +224,7 @@
     height:420px;
     overflow:hidden;
   }
-  .hero-grid img{ width:100%; height:100%; object-fit:cover; display:block; filter:saturate(0.85) contrast(1.05); }
+  .hero-grid img{ width:100%; height:100%; object-fit:cover; display:block; filter:grayscale(0.55) contrast(1.1); }
   .hero-grid .stack{ display:grid; grid-template-rows:1fr 1fr; gap:6px; height:100%; min-height:0; overflow:hidden; }
   .hero-grid .stack img{ min-height:0; }
 
@@ -248,8 +248,8 @@
     gap:80px;
     align-items:center;
   }
-  .story img{ width:100%; height:560px; object-fit:cover; border-radius:2px; }
-  .story-copy p{ color:#4a4535; margin-bottom:18px; font-size:16px; max-width:460px; }
+  .story img{ width:100%; height:560px; object-fit:cover; border-radius:2px; filter:grayscale(0.5) contrast(1.05); }
+  .story-copy p{ color:#4a4a47; margin-bottom:18px; font-size:16px; max-width:460px; }
   .story-stats{
     display:flex;
     gap:44px;
@@ -268,7 +268,7 @@
     font-size:11px;
     letter-spacing:0.08em;
     text-transform:uppercase;
-    color:#726b57;
+    color:#6b6b68;
   }
 
   @media (max-width:860px){
@@ -343,10 +343,10 @@
     width:260px;
     flex:0 0 auto;
     object-fit:cover;
-    filter:saturate(0.9);
+    filter:grayscale(0.6) contrast(1.05);
     transition:transform .5s var(--ease), filter .5s;
   }
-  .strip img:hover{ transform:scale(1.03); filter:saturate(1.05); }
+  .strip img:hover{ transform:scale(1.03); filter:grayscale(0) saturate(1.05); }
 
   /* ---------- reviews ---------- */
   .reviews-grid{
@@ -361,12 +361,12 @@
     padding:36px 32px;
   }
   .review-stars{ color:var(--brass); font-size:14px; letter-spacing:2px; margin-bottom:16px; }
-  .review-card p{ font-size:15px; color:#3d3928; margin-bottom:20px; }
+  .review-card p{ font-size:15px; color:#2e2e2c; margin-bottom:20px; }
   .review-name{
     font-family:'Space Mono', monospace;
     font-size:12px;
     letter-spacing:0.05em;
-    color:#726b57;
+    color:#6b6b68;
   }
   .review-tags{ font-size:12px; color:var(--oxblood); margin-top:4px; }
 
@@ -427,13 +427,13 @@
     color:var(--ivory);
     margin-bottom:14px;
   }
-  .foot-grid p{ font-size:14px; max-width:260px; color:#a49c86; }
+  .foot-grid p{ font-size:14px; max-width:260px; color:#9a9a96; }
   .foot-col .eyebrow{ display:block; margin-bottom:16px; }
   .foot-col div{ font-size:14px; margin-bottom:10px; color:var(--ivory-dim); }
   .foot-col a:hover{ color:var(--brass-bright); }
   .foot-bottom{
     display:flex; justify-content:space-between; align-items:center;
-    padding-top:26px; font-size:12px; color:#726b57;
+    padding-top:26px; font-size:12px; color:#6b6b68;
     font-family:'Space Mono', monospace;
     flex-wrap:wrap; gap:12px;
   }
@@ -642,7 +642,7 @@
     <div class="reveal">
       <span class="eyebrow" style="color:var(--brass-bright);">Come Sit Down</span>
       <h2>book your chair</h2>
-      <p style="color:#e7d3d6; max-width:420px; font-size:16px;">Call ahead to lock in a time, or swing by — if the chair's open, you're in it.</p>
+      <p style="color:#d4d4d1; max-width:420px; font-size:16px;">Call ahead to lock in a time, or swing by — if the chair's open, you're in it.</p>
       <div class="visit-info">
         <div>
           <div class="label">Address</div>
@@ -662,7 +662,7 @@
             Sat&nbsp; 8am–8:30pm<br>
             Sun&nbsp; 9am–7pm
           </div>
-          <div style="font-family:'Space Mono',monospace; font-size:11px; color:#e7d3d6; margin-top:8px;">Holiday hours may differ — call ahead on Fri/Sat this week</div>
+          <div style="font-family:'Space Mono',monospace; font-size:11px; color:#d4d4d1; margin-top:8px;">Holiday hours may differ — call ahead on Fri/Sat this week</div>
         </div>
       </div>
       <a href="tel:+15046771186" class="btn-brass" style="margin-top:34px; background:var(--brass-bright);">Call to Book</a>
